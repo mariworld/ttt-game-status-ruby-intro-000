@@ -24,6 +24,7 @@ def won?(board)
     else
       nil
     end
+    index += 1
   end
   position_taken?(board, index)
 end
