@@ -17,5 +17,13 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  position_taken?(board, 0)
+  index = 0
+  while index < WIN_COMBINATIONS.length do
+    if WIN_COMBINATIONS[index]
+      WIN_COMBINATIONS[index]
+    else
+      nil
+    end
+  end
+  position_taken?(board, index)
 end
