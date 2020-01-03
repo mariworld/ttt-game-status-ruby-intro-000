@@ -20,8 +20,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   index = 0
   while index < WIN_COMBINATIONS.length do
-    if WIN_COMBINATIONS[index] == "X" or WIN_COMBINATIONS == "O"
-      WIN_COMBINATIONS[index]
+    if position_taken?(board,index) == "X"
     else
       nil
     end
